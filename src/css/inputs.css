@@ -1,0 +1,25 @@
+.form-control{
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+input.form-control:focus {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    
+}
+
+.input-control.succes {
+    border-color: #2ecc71;
+}
+
+.input-control.error {
+    border-color: #e74c3c;
+}
