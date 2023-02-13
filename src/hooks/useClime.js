@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { getClime } from '../services/Clime'
 
+// TODO: Optimizar el codigo y el rendimiento de la aplicacion
+
 //* Hook que hace la peticion a la API y maneja los estados
 export const useClime = () => {
   //* Estados
