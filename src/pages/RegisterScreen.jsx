@@ -14,7 +14,7 @@ const RegisterScreen = () => {
       <div className='row container'>
         <form onSubmit={handleRegister} className='col s12'>
           <div className='row'>
-            <div className='form-group mb-1'>
+            <div className='form-group'>
               <label htmlFor='exampleInputEmail'>Email</label>
               <input
                 onChange={handleChange}
@@ -27,7 +27,7 @@ const RegisterScreen = () => {
                 placeholder='example@email.com'
               />
             </div>
-            <div className='form-group mb-1'>
+            <div className='form-group '>
               <label htmlFor='exampleInputUsername'>Username</label>
               <input
                 onChange={handleChange}
@@ -40,7 +40,7 @@ const RegisterScreen = () => {
                 placeholder='Enter your username'
               />
             </div>
-            <div className='form-group col-6 mb-3 '>
+            <div className='form-group col-6  '>
               <label htmlFor='exampleInputPassword1'>Password</label>
               <input
                 onChange={handleChange}
@@ -53,7 +53,7 @@ const RegisterScreen = () => {
               />
             </div>
 
-            <div className='form-group col-6 mb-3 '>
+            <div className='form-group col-6  '>
               <label htmlFor='exampleInputPassword2'>Confirm Password</label>
               <input
                 onChange={handleChange}

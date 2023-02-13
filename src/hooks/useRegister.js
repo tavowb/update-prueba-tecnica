@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { register } from '../actions/auth'
 import Swal from 'sweetalert2'
+import { errorInputEffect, succesInputEffect } from './useInputEffects'
 
 //* Hook que maneja los estados y funciones de la pagina de registro
 const useRegister = () => {
@@ -22,41 +23,33 @@ const useRegister = () => {
       const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
 
       if (!emailRegex.test(target.value)) {
-        target.classList.remove('succes')
-        target.classList.add('error')
+        errorInputEffect(target)
       } else {
-        target.classList.remove('error')
-        target.classList.add('succes')
+        succesInputEffect(target)
       }
     }
 
     if (target.name === 'username') {
       if (target.value.trim().length < 2) {
-        target.classList.remove('succes')
-        target.classList.add('error')
+        errorInputEffect(target)
       } else {
-        target.classList.remove('error')
-        target.classList.add('succes')
+        succesInputEffect(target)
       }
     }
 
     if (target.name === 'password') {
       if (target.value.trim().length < 6) {
-        target.classList.remove('succes')
-        target.classList.add('error')
+        errorInputEffect(target)
       } else {
-        target.classList.remove('error')
-        target.classList.add('succes')
+        succesInputEffect(target)
       }
     }
 
     if (target.name === 'password2') {
       if (target.value.trim() !== password.trim()) {
-        target.classList.remove('succes')
-        target.classList.add('error')
+        errorInputEffect(target)
       } else {
-        target.classList.remove('error')
-        target.classList.add('succes')
+        succesInputEffect(target)
       }
     }
   }

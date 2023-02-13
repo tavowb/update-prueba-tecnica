@@ -7,7 +7,7 @@ const LoginScreen = () => {
     useLogin()
 
   return (
-    <div className='container mt-5 aling-items-center col-6'>
+    <div className='container mt-5 col-6'>
       <h1>Login Page</h1>
       <hr />
 
@@ -15,33 +15,33 @@ const LoginScreen = () => {
         <form onSubmit={handleEmailLogin} className='fluid'>
           <div className='row form-outline'>
             <div className='form-group mb-1'>
-              <label type='email' htmlFor='exampleInputEmail1'>Email</label>
+              <label type='email' htmlFor='input-login-email'>Email</label>
               <input
                 onChange={handleChange}
                 value={email}
                 name='email'
                 type='email'
-                className='form-control'
-                id='exampleInputEmail1'
+                className='form-control input-control'
+                id='input-login-email'
                 placeholder='Enter email'
               />
             </div>
             <div className='form-group '>
-              <label htmlFor='exampleInputPassword1'>Password</label>
+              <label htmlFor='input-login-password'>Password</label>
               <input
                 onChange={handleChange}
                 value={password}
                 name='password'
                 type='password'
-                className='form-control'
-                id='exampleInputPassword1'
+                className='form-control input-control'
+                id='input-login-password'
                 placeholder='Password'
               />
             </div>
           </div>
           <br />
           <button
-            className='btn btn-primary waves-effect waves-light'
+            className='btn btn-primary '
             type='submit'
             name='action'
           >

@@ -1,7 +1,7 @@
 import { firebase, googleAuthProvider } from '../firebase/firebase'
 import { types } from '../types/types'
 import Swal from 'sweetalert2'
-
+import { errorInputEffect } from '../hooks/useInputEffects'
 // * Inicio de sesion con Google
 export const googlelogin = () => {
   return (dispatch) => {
@@ -28,6 +28,7 @@ export const emailAndPLogin = (email, password) => {
             icon: 'error',
             title: 'the email is not found'
           })
+          errorInputEffect(document.getElementById('input-login-email'))
         }
 
         if (e.code === 'auth/wrong-password') {
@@ -35,6 +36,7 @@ export const emailAndPLogin = (email, password) => {
             icon: 'error',
             title: 'the password is wrong'
           })
+          errorInputEffect(document.getElementById('input-login-password'))
         }
       })
   }
