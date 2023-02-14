@@ -3,9 +3,6 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 
 import Navbar from '../components/Navbar'
 import Loading from '../components/Loading'
-// import AppScreen from '../pages/AppScreen'
-// import NewScreen from '../pages/NewScreen'
-// import Wheather from '../pages/Wheather'
 
 // * Lazy loading
 const AppScreen = lazy(() => import('../pages/AppScreen'))
