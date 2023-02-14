@@ -9,7 +9,7 @@ const Card = ({ data, url }) => {
     >
       {data &&
         <div
-          className='card 'style={{
+          className='card' style={{
             witdh: 300,
             height: 500
           }}
@@ -18,7 +18,12 @@ const Card = ({ data, url }) => {
             <div className='card-header text-start text-primary text-bold'>
               Hace: {horas} horas
             </div>}
-          <img loading='lazy' src={data.urlToImage} alt={data.content} className='card-img rounded-0' />
+          <img
+            loading='lazy' src={data.urlToImage} alt={data.content} className='card-img rounded-0' style={{
+              witdh: 300,
+              height: 200
+            }}
+          />
 
           <div className='card-body'>
             <h6 className='card-title'>{data.title}</h6>
