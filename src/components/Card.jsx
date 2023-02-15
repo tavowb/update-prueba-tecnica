@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import '../css/card.css'
 import { useDate } from '../hooks/useDate'
+
 const Card = ({ data, url }) => {
   const { horas } = useDate(url, data)
   return (

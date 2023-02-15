@@ -59,6 +59,7 @@ requerir:
 - https://newsapi.org
 - https://openweathermap.org
 - O el de su preferencia
+
 Interfaz Grafica
 Crear una interfaz gráfica de usuario web con Angular, React, Vue.js, .Net o cualquier otro
 Framework que permita visualizar los siguientes requerimientos usando servicios API REST:
